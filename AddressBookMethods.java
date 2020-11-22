@@ -107,5 +107,17 @@ public class AddressBookMethods {
 			default:
 				System.out.println("Please Enter Correct Option");
 			}
+			
+		void Delete() {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter the Name whose data to delete");
+		String name = scanner.next();
+		for (int i = 0; i < addressBook.size(); i++) 
+		{
+			if (addressBook.get(i).getFirst_Name().equalsIgnoreCase(name)) 
+			{
+				addressBook.remove(i);
+			}
+		}
 		}
 	}

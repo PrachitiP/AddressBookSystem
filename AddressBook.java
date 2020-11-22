@@ -7,6 +7,7 @@ public class AddressBook {
 		 AddressBookMethods addressMethod = new AddressBookMethods();
 		 addressBookMethod.Add();
 		 addressMethod.Edit();
+		 addressMethod.Delete();
 	}
 
 }
