@@ -6,6 +6,7 @@ public class AddressBook {
 		 System.out.println("Welcome to Address Book System");
 		 AddressBookMethods addressMethod = new AddressBookMethods();
 		 addressBookMethod.Add();
+		 addressMethod.Edit();
 	}
 
 }
