@@ -1,7 +1,4 @@
 package BridgeLabz.AddressBook;
-
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Scanner;
 
 public class AddressBook {
@@ -35,30 +32,4 @@ public class AddressBook {
 			}
 		}
 	}
-
-	public static void main(String[] arg) {
-		System.out.println("Welcome to Address book");
-		Map<String, AddressBookMethods> addressbookMap = new HashMap<String, AddressBookMethods>();
-		String name = null;
-		while (true) {
-
-			System.out.println("Enter the Address book name");
-			Scanner scanner = new Scanner(System.in);
-			name = scanner.nextLine();
-			AddressBookMethods addressMethods = addressbookMap.get(name);
-			if (addressMethods == null) {
-				addressMethods = new AddressBookMethods();
-				addressbookMap.put(name, addressMethods);
-			}
-
-			AddressBook book = new AddressBook();
-			book.address_Book(addressMethods);
-			System.out.println("Press 1 : Want to enter in other addressbook");
-			System.out.println("Press any other digit to exit");
-			String choise = scanner.nextLine();
-			if (!choise.equals("1"))
-				break;
-		}
-	}
-
 }
